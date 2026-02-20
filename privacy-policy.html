@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Context Saver - Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #37352f;
+      background: #fafafa;
+      line-height: 1.8;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      padding: 48px 40px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    h1 { font-size: 28px; margin-bottom: 8px; }
+    .updated { color: #718096; font-size: 14px; margin-bottom: 32px; }
+    h2 { font-size: 20px; margin-top: 32px; margin-bottom: 12px; color: #1a202c; }
+    h3 { font-size: 16px; margin-top: 20px; margin-bottom: 8px; color: #2d3748; }
+    p { margin-bottom: 16px; color: #4a5568; }
+    ul { margin: 0 0 16px 24px; color: #4a5568; }
+    li { margin-bottom: 8px; }
+    code { background: #f1f1f1; padding: 2px 6px; border-radius: 3px; font-size: 14px; }
+    a { color: #2383e2; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer { margin-top: 40px; padding-top: 24px; border-top: 1px solid #e2e8f0; color: #718096; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: February 20, 2026</p>
+
+    <h2>Overview</h2>
+    <p>AI Context Saver is a Chrome extension designed to help users save and organize selected text from web pages, especially from AI conversation platforms. Your privacy is important to us. This extension is built with a local-first architecture, meaning your data stays on your device.</p>
+
+    <h2>Data Collection</h2>
+    <p>AI Context Saver does <strong>not</strong> collect, transmit, store, or sell any personal data. Specifically:</p>
+    <ul>
+      <li>No personally identifiable information is collected.</li>
+      <li>No browsing history is tracked.</li>
+      <li>No analytics, cookies, or tracking technologies are used.</li>
+      <li>No data is sent to external servers.</li>
+    </ul>
+
+    <h2>Local Data Storage</h2>
+    <p>All content you save (such as text snippets, notes, and tags) is stored exclusively in your browser using the <code>chrome.storage.local</code> API. This data:</p>
+    <ul>
+      <li>Remains entirely on your device.</li>
+      <li>Is never transmitted to any server.</li>
+      <li>Cannot be accessed by the extension developer.</li>
+      <li>Can be viewed, exported, or deleted by you at any time through the extension's dashboard.</li>
+      <li>Is permanently removed when you uninstall the extension.</li>
+    </ul>
+
+    <h2>Chrome Sync</h2>
+    <p>If you enable Chrome's built-in sync feature, your data may be synchronized across your own devices through your Google account. This process is managed entirely by Google and is not accessible to the extension developer.</p>
+
+    <h2>Permissions and Their Use</h2>
+    <h3>storage</h3>
+    <p>Used to store your saved content and settings locally in Chrome.</p>
+    <h3>activeTab</h3>
+    <p>Used only when you manually activate the extension to read the text you explicitly select on the current page.</p>
+    <h3>scripting</h3>
+    <p>Used to inject a content script into the current page when you trigger the save action. This is necessary because AI platforms like ChatGPT and Claude are Single Page Applications (SPAs) that dynamically load content — the script must be injected on-demand when you press the keyboard shortcut.</p>
+
+    <h2>Host Permissions</h2>
+    <p>The extension requests access to specific AI platform domains (chatgpt.com, claude.ai, gemini.google.com, grok.com, x.com) to enable enhanced metadata extraction such as conversation titles. The extension:</p>
+    <ul>
+      <li>Does not run automatically in the background on these sites.</li>
+      <li>Does not monitor your activity.</li>
+      <li>Only activates when you explicitly use the save function.</li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <p>This extension does not use third-party APIs, remote code, analytics services, or external databases.</p>
+
+    <h2>Data Sharing</h2>
+    <p>We do not sell, transfer, or share any user data because we do not collect it.</p>
+
+    <h2>Your Control Over Your Data</h2>
+    <p>You have full control over your data:</p>
+    <ul>
+      <li>You can delete individual items at any time.</li>
+      <li>You can clear all saved data from the dashboard.</li>
+      <li>You can export your data as CSV for backup or migration.</li>
+      <li>You can remove all data by uninstalling the extension.</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>This extension does not knowingly collect any data from anyone, including children under the age of 13.</p>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated revision date.</p>
+
+    <h2>Contact</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us:</p>
+    <p>📧 <a href="mailto:support@anpu-jp.com">support@anpu-jp.com</a></p>
+    <p>🔗 <a href="https://github.com/contextsaverap-pro/ai-context-saver">GitHub Repository</a></p>
+
+    <div class="footer">
+      <p>AI Context Saver &copy; 2026 ANPU Co., Ltd. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
